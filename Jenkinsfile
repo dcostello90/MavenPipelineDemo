@@ -9,14 +9,14 @@ maven 'maven-3.6.3'
 stages{
 stage('Build Code'){
 	steps{
-		bat 'mvn -f maven-demo/pom.xml clean install'
+		bat 'mvn -f my-app/pom.xml clean install'
 }
 	}
 
 	
 stage('Run Tests') {
 steps {
-bat'mvn -f maven-demo/pom.xml test'
+bat'mvn -f my-app/pom.xml test'
 }
 }
 }
